@@ -1,0 +1,56 @@
+
+#alert tcp any any -> any 80 (msg:"test rule"; content:"GET /"; content:"Host: www.gilgil.net"; sid:10001; rev:1;)
+#alert tcp any any -> any 80 (msg:"test rule"; content:"GET /"; content:"Host: www.naver.com"; sid:10002; rev:1;)
+#alert dns any any -> any any (msg:"gogogogogogogo"; dns_query; content:"google"; nocase; sid:1;)
+
+alert dns any any -> any any (msg:"hitomi.la is detected :("; dns_query; content:"hitomi"; nocase; sid:2;)
+alert dns any any -> any any (msg:"kass.org.kp is detected :("; dns_query; content:"kass.org.kp"; nocase; sid:3;)
+alert dns any any -> any any (msg:"kcna.kp is detected :("; dns_query; content:"kcna.kp"; nocase; sid:4;)
+alert dns any any -> any any (msg:"kitribob.wiki/wiki is detected :("; dns_query; content:"kitribob.wiki/wiki"; nocase; sid:5;)
+alert dns any any -> any any (msg:"linoit.com/users/men1212/canvases/19%EA%B8%88%20 is detected :("; dns_query; content:"linoit.com/users/men1212/canvases/19%EA%B8%88%20"; nocase; sid:6;)
+alert dns any any -> any any (msg:"naevr.com is detected :("; dns_query; content:"naevr.com"; nocase; sid:7;)
+alert dns any any -> any any (msg:"named.com/game/ladder/v2_index.php is detected :("; dns_query; content:"named.com/game/ladder/v2_index.php"; nocase; sid:8;)
+alert dns any any -> any any (msg:"naver6.com is detected :("; dns_query; content:"naver6.com"; nocase; sid:9;)
+alert dns any any -> any any (msg:"onaratv.com is detected :("; dns_query; content:"onaratv.com"; nocase; sid:10;)
+
+
+alert dns any any -> any any (msg:"pornpros.com is detected :("; dns_query; content:"pornpros.com"; nocase; sid:11;)
+alert dns any any -> any any (msg:"rodong.rep.kp is detected :("; dns_query; content:"rodong.rep.kp"; nocase; sid:12;)
+alert dns any any -> any any (msg:"snoopspy.com/download is detected :("; dns_query; content:"snoopspy.com/download"; nocase; sid:13;)
+alert dns any any -> any any (msg:"test.gilgil.net/streaming/test.mp4 is detected :("; dns_query; content:"test.gilgil.net/streaming/test.mp4"; nocase; sid:14;)
+alert dns any any -> any any (msg:"uriminzokkiri.com is detected :("; dns_query; content:"uriminzokkiri.com"; nocase; sid:15;)
+alert dns any any -> any any (msg:"www.4shared.com is detected :("; dns_query; content:"4shared.com"; nocase; sid:16;)
+alert dns any any -> any any (msg:"www.bamwar25.com is detected :("; dns_query; content:"bamwar25.com"; nocase; sid:17;)
+alert dns any any -> any any (msg:"www.faa25.com is detected :("; dns_query; content:"www.faa25.com"; nocase; sid:18;)
+alert dns any any -> any any (msg:"www.ilbe.com/ilbe is detected :("; dns_query; content:"www.ilbe.com"; nocase; sid:19;)
+alert dns any any -> any any (msg:"www.kimmadam.net is detected :("; dns_query; content:"kimmadam.net"; nocase; sid:20;)
+
+
+alert dns any any -> any any (msg:"minjok.com is detected :("; dns_query; content:"minjok.com"; nocase; sid:21;)
+alert dns any any -> any any (msg:"www.narutoxxx.com is detected :("; dns_query; content:"narutoxxx.com"; nocase; sid:22;)
+alert dns any any -> any any (msg:"www.naver.cm is detected :("; dns_query; content:"www.naver.cm"; nocase; sid:23;)
+alert dns any any -> any any (msg:"www.ryomyong.com is detected :("; dns_query; content:"www.ryomyong.com"; nocase; sid:24;)
+alert dns any any -> any any (msg:"www.sedisk.com is detected :("; dns_query; content:"www.sedisk.com"; nocase; sid:25;)
+alert dns any any -> any any (msg:"www.sk386.com is detected :("; dns_query; content:"www.sk386.com"; nocase; sid:26;)
+alert dns any any -> any any (msg:"www.tcosc.net is detected :("; dns_query; content:"www.tcosc.net"; nocase; sid:27;)
+alert dns any any -> any any (msg:"www.torenzoa.net is detected :("; dns_query; content:"torenzoa.net"; nocase; sid:28;)
+alert dns any any -> any any (msg:"www.umj262.com is detected :("; dns_query; content:"www.umj262.com"; nocase; sid:29;)
+alert dns any any -> any any (msg:"www.uriminzokkiri.com is detected :("; dns_query; content:"www.uriminzokkiri.com"; nocase; sid:30;)
+
+
+alert dns any any -> any any (msg:"www.uriminzokkiri.com/ is detected :("; dns_query; content:"www.uriminzokkiri.com/"; nocase; sid:31;)
+alert dns any any -> any any (msg:"www.winclub88.net/my/4D.html is detected :("; dns_query; content:"www.winclub88.net/my4D.html"; nocase; sid:32;)
+alert dns any any -> any any (msg:"graphgame.net/ is detected :("; dns_query; content:"graphgame.net"; nocase; sid:33;)
+alert dns any any -> any any (msg:"mujige53770.wixsite.com is detected :("; dns_query; content:"mujige53770.wixsite.com"; nocase; sid:34;)
+alert dns any any -> any any (msg:"sex.com is detected :("; dns_query; content:"sex.com"; nocase; sid:35;)
+alert dns any any -> any any (msg:"torrenthaja.com is detected :("; dns_query; content:"torrenthaja.com"; nocase; sid:36;)
+alert dns any any -> any any (msg:"torrentkim10.net is detected :("; dns_query; content:"torrentkim10.net"; nocase; sid:37;)
+alert dns any any -> any any (msg:"webtoon.bamtoki.com/ is detected :("; dns_query; content:"webtoon.bamtoki.com"; nocase; sid:38;)
+alert dns any any -> any any (msg:"www.facebook.com/profile.php?id=100019007882633 is detected :("; dns_query; content:"www.facebook.com/profile.php?id=100019007882633"; nocase; sid:39;)
+alert dns any any -> any any (msg:"www.mtbucks.com is detected :("; dns_query; content:"mtbucks.com"; nocase; sid:40;)
+
+
+alert dns any any -> any any (msg:"opioids.com/offshorepharmacy/index.html is detected :("; dns_query; content:"opioids.com/offshorepharmacy/index.html"; nocase; sid:41;)
+alert dns any any -> any any (msg:"phishtank.com/ is detected :("; dns_query; content:"phishtank.com"; nocase; sid:42;)
+alert dns any any -> any any (msg:"yobit.net/en/dice/ is detected :("; dns_query; content:"yobit.net/en/dice"; nocase; sid:43;)
+
